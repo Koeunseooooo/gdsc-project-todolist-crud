@@ -1,6 +1,8 @@
-import appStyle from "./style/hellow.module.css"
+const loginInput = document.querySelector("#login-form input")
+const loginButton = document.querySelector("#login-form button")
 
-const App = document.getElementById("app")
-
-App.classList.add(appStyle.appFont)
-App.innerHTML = `<div class="hellow">Vanilla template</div>`
+function onLoginBtnClick() {
+    console.log("click!!")
+    console.log("hello", loginInput.value)
+}
+loginButton.addEventListener("click", onLoginBtnClick)
