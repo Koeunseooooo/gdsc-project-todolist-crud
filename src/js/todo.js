@@ -3,7 +3,7 @@ const todoInput = todoForm.querySelector("input")
 const todoList = document.getElementById("todo-list")
 const todos = []
 
-function handleButtonClick(event) {
+function deleteTodos(event) {
     const targetedTodo = event.target.parentElement
     targetedTodo.remove()
 }
@@ -17,7 +17,7 @@ function paintTodo(todoNew) {
     span.innerText = todoNew
     button.innerText = "✖️"
     todoList.appendChild(li)
-    button.addEventListener("click", handleButtonClick)
+    button.addEventListener("click", deleteTodos)
 }
 
 function saveTodo() {
