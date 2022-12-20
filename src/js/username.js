@@ -6,7 +6,7 @@ const HIDDEN_CLASSNAME = "hidden"
 const USERNAME_KEY = "username"
 
 function paintGreeting(username) {
-    greeting.innerText = `Hello ${username}`
+    greeting.innerText = `${username}의 오늘 할 일`
     greeting.classList.remove(HIDDEN_CLASSNAME)
 }
 
